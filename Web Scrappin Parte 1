@@ -1,0 +1,19 @@
+#Web Scrappin Parte 1 usando librería Soup
+
+#Importar librerías
+from bs4 import BeautifulSoup
+import requests
+
+result = requests.get("https://data.buenosaires.gob.ar/dataset/bicicletas-publicas/resource/a9095876-e584-4b0d-976c-a4600455565b")
+result.status_code #obtener status
+result.headers #obtener encabezados
+
+contenido = result.text
+
+soup = BeautifulSoup(contenido,"lxml")
+
+#HTML en formato legible
+print(soup.prettify())
+
+#Encontrar archivo ZIP
+soup.find_all("a")
