@@ -1,0 +1,28 @@
+#Conexión a base de datos
+
+from sqlalchemy import create_engine
+
+import pandas as pd
+import numpy as np
+
+pip install mysqlclient
+
+pip install mysql-python
+
+db = "bcdmkwhobpsqm0dtawmj"
+table = "bicicletas"
+path = "/content/NewFolder/trips_2021.csv"
+
+url = "mysql://uwcmowy9tql3cxuk:MrNmiGXDWewh8RzctxnG@bcdmkwhobpsqm0dtawmj-mysql.services.clever-cloud.com:3306/bcdmkwhobpsqm0dtawmj"
+
+engine = create_engine(url,echo = False)
+
+df = pd.read_csv(path)
+
+print("read ok")
+
+df.to_sql(name = table, con = engine, index = False)
+
+pip install mysql-connector-python
+
+import mysql.connector
