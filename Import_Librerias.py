@@ -1,7 +1,7 @@
 import os
-import pandas as pd
-import numpy as np
-import seaborn as sns
-import missingno as msno
-from sqlalchemy import create_engine
+import pandas as pd #pip install pandas
+import numpy as np  #pip install numpy
+import seaborn as sns #pip install seaborn
+import missingno as msno #pip install missingno
+from sqlalchemy import create_engine #pip install sqlalchemy
 import mysql.connector
