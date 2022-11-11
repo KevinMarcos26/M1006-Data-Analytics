@@ -1,28 +1,28 @@
 #Conexión a base de datos
 
-from sqlalchemy import create_engine
-
-import pandas as pd
-import numpy as np
+pip install mysql-connector-python
 
 pip install mysqlclient
 
 pip install mysql-python
 
-db = "bcdmkwhobpsqm0dtawmj"
-table = "bicicletas"
-path = "/content/NewFolder/trips_2021.csv"
-
-url = "mysql://uwcmowy9tql3cxuk:MrNmiGXDWewh8RzctxnG@bcdmkwhobpsqm0dtawmj-mysql.services.clever-cloud.com:3306/bcdmkwhobpsqm0dtawmj"
-
-engine = create_engine(url,echo = False)
-
-df = pd.read_csv(path)
-
-print("read ok")
-
-df.to_sql(name = table, con = engine, index = False)
-
-pip install mysql-connector-python
-
+from sqlalchemy import create_engine
 import mysql.connector
+
+
+#Se crea el motor de la base de datos
+url = "mysql://uvpmatpztkwbshmx:aoSHATQIF5Oh2Q4Tp0uC@bof6ttecaud2fdrsz6f4-mysql.services.clever-cloud.com:3306/bof6ttecaud2fdrsz6f4"
+engine = create_engine(url, echo = False)
+
+mysql_conec = engine.connect()
+
+#Conexion con la base de datos mediante una variable llamada cursor
+#Alclaracion: Se debe ejecutar siempre antes de consultas SQL
+
+conec = mysql.connector.connect(
+    host="bof6ttecaud2fdrsz6f4-mysql.services.clever-cloud.com",
+    user="uvpmatpztkwbshmx",
+    passwd="aoSHATQIF5Oh2Q4Tp0uC",
+    database="bof6ttecaud2fdrsz6f4",
+    );
+cursor = conec.cursor()
