@@ -1,0 +1,23 @@
+INFORME
+
+Analisís de información de base de datos online
+
+El gobierno de la Ciudad de Buenos Aires recolecta datos acerca del uso de los servicios de bicicletas públicas denominado ecobici y publica parte de ellos.
+
+Para este ejemplo usaremos los viajes de la base de datos del 2021. Nuestro objetivo es conocer más acerca del uso que le dan los usuarios al sistema,para ver las posibilidades de emplear dicho sistema en otras jurisdicciones, por lo cual se desea extraer la siguiente información:
+
+1) ¿Cuál es la duración promedio de cada viaje? (Los datos están en segundos) 2)¿Cuántas estaciones diferentes fueron utilizadas? 3) Efectuar visualizaciones de los insights generados en la presente investigación. 4) ¿Cuántos modelos de bicicletas se utilizaron y cuáles son?
+
+LA DURACIÓN PROMEDIO DE VIAJES ES DE '21' MINUTOS
+
+HAY 274 ESTACIONES DE ORIGEN O PARTIDA
+
+HAY 275 ESTACIONES DE DESTINO
+
+SE EMPLEARON 2 MODELOS DE BICICLETAS DIFERENTES
+
+MODELOS DE BICICLETAS UTILIZADOS "FIT" E "ICONIC"
+
+LA ESTACION DE ORIGEN Y DE DESTINO MÁS UTILIZADA ES LA 14BAEcobici, NOMBRE: 014 - Pacifico , DIRECCION: Santa Fe Av. & Bullrich, Int. Av.
+
+LA ESTACION DE ORIGEN MENOS UTILIZADA ES LA 447BAEcobici, NOMBRE:Balboa Definitivo, DIRECCION: 220 Balboa. LA ESTACION DE DESTINO MENOS UTILIZADA ES LA 402BAEcobici, NOMBRE: 006 - planeada, DIRECCION: 3209 Av. Francisco Beiro
