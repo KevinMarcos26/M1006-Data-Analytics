@@ -7,7 +7,7 @@ df_recorrido = pd.DataFrame(df_limpio, columns = ['id_recorrido', 'id_usuario', 
 df_recorrido = df_recorrido.drop_duplicates(['id_recorrido'])
 
 df_recorrido.to_csv("recorrido.csv")
-df_recorrido.head()
+
 
 #Corresponde a la tabla "USUARIO"
 #Aclaracion: Solo se utiliza los id sin repetir, porque son los unicos que se necesitan y se pueden utilizar en la tabla con id "primary key" de MySQL
@@ -26,5 +26,15 @@ df_estacion_origen = pd.DataFrame(df_limpio, columns = ['id_estacion_origen', 'n
 
 #Se eliminan los id duplicados
 df_estacion_origen = df_estacion_origen.drop_duplicates(['id_estacion_origen'])
+
+df_estacion_origen.to_csv("origen.csv")
+
+#Corresponde a la tabla "ESTACION_DESTINO"
+#Aclaracion: Solo se utiliza los id sin repetir, porque son los unicos que se necesitan y se pueden en utilizar en la tabla con id "primary key" de MySQL
+
+df_estacion_destino = pd.DataFrame(df_limpio, columns = ['id_estacion_destino', 'nombre_estacion_destino', 'direccion_estacion_destino', 'long_estacion_destino', 'lat_estacion_destino', 'fecha_destino_recorrido'])
+
+#Se eliminan los id duplicados
+df_estacion_destino = df_estacion_destino.drop_duplicates(['id_estacion_destino'])
 
 df_estacion_destino.to_csv("destino.csv")
