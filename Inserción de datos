@@ -1,0 +1,61 @@
+#Pasar datos desde CSV a sus correspondiente tablas
+
+#1)Recorrido
+db = "bof6ttecaud2fdrsz6f4"
+table = "RECORRIDOS"
+path = "/content/recorrido.csv"
+
+url = "mysql://uvpmatpztkwbshmx:aoSHATQIF5Oh2Q4Tp0uC@bof6ttecaud2fdrsz6f4-mysql.services.clever-cloud.com:3306/bof6ttecaud2fdrsz6f4"
+
+engine = create_engine(url, echo = False)
+
+df = pd.read_csv(path)
+
+print ("read ok")
+
+df.to_sql(name = table, con = engine, index = False)
+
+#2)Usuario
+db = "bof6ttecaud2fdrsz6f4"
+table = "USUARIO"
+path = "/content/usuario.csv"
+
+url = "mysql://uvpmatpztkwbshmx:aoSHATQIF5Oh2Q4Tp0uC@bof6ttecaud2fdrsz6f4-mysql.services.clever-cloud.com:3306/bof6ttecaud2fdrsz6f4"
+
+engine = create_engine(url, echo = False)
+
+df = pd.read_csv(path)
+
+print ("read ok")
+
+df.to_sql(name = table, con = engine, index = False)
+
+#3)Origen
+db = "bof6ttecaud2fdrsz6f4"
+table = "ESTACION_ORIGEN"
+path = "/content/origen.csv"
+
+url = "mysql://uvpmatpztkwbshmx:aoSHATQIF5Oh2Q4Tp0uC@bof6ttecaud2fdrsz6f4-mysql.services.clever-cloud.com:3306/bof6ttecaud2fdrsz6f4"
+
+engine = create_engine(url, echo = False)
+
+df = pd.read_csv(path)
+
+print ("read ok")
+
+df.to_sql(name = table, con = engine, index = False)
+
+#4)Destino
+db = "bof6ttecaud2fdrsz6f4"
+table = "ESTACION_DESTINO"
+path = "/content/destino.csv"
+
+url = "mysql://uvpmatpztkwbshmx:aoSHATQIF5Oh2Q4Tp0uC@bof6ttecaud2fdrsz6f4-mysql.services.clever-cloud.com:3306/bof6ttecaud2fdrsz6f4"
+
+engine = create_engine(url, echo = False)
+
+df = pd.read_csv(path)
+
+print ("read ok")
+
+df.to_sql(name = table, con = engine, index = False)
