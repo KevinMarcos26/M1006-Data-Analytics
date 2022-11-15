@@ -8,4 +8,5 @@ Para este ejemplo usaremos los viajes de la base de datos del 2021. Nuestro obje
 1) ¿Cuál es la duración promedio de cada viaje? (Los datos están en segundos) 2)¿Cuántas estaciones diferentes fueron utilizadas? 3) Efectuar visualizaciones de los insights generados en la presente investigación. 4) ¿Cuántos modelos de bicicletas se utilizaron y cuáles son?
 
 Página fuente de los datos a investigar: https://data.buenosaires.gob.ar/dataset/bicicletas-publicas/resource/a9095876-e584-4b0d-976c-a4600455565b
-URl Google Colab del proyecto https://colab.research.google.com/drive/1CR14885abOA_NYVb2vUoYV3Mn0R0w20K#scrollTo=FmGySCS4cIWK
+
+URL Google Colab del proyecto https://colab.research.google.com/drive/1CR14885abOA_NYVb2vUoYV3Mn0R0w20K#scrollTo=FmGySCS4cIWK
