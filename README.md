@@ -12,3 +12,5 @@ Página fuente de los datos a investigar: https://data.buenosaires.gob.ar/datase
 URL Google Colab del proyecto https://colab.research.google.com/drive/1CR14885abOA_NYVb2vUoYV3Mn0R0w20K#scrollTo=FmGySCS4cIWK
 
 URL Cuaderno Trello https://trello.com/b/ZgPAOBo0/preparacion-de-material-de-trabajo
+
+URL Video presentación https://drive.google.com/file/d/18sC7bRWAvGZ83kJl79oIS5SPyy-j6MiJ/view?usp=sharing
